@@ -1,0 +1,15 @@
+<nav id="nav" class="">
+
+    <ul class="">
+        {% for item in navigation.main %}
+        <li class="">
+            <a href="{{ item.url | safe }}" class="{% if page.url == item.url %}active text-pink-dark{% endif %}
+            ">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+        <li>
+            <a class="" href="https://github.com/dmcgaa/11ty-stylin" target="_blank" rel="noopener">Download</a>
+        </li>
+    </ul>
+
+</nav>

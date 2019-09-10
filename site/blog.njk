@@ -1,0 +1,59 @@
+---
+layout: default
+meta_title: Blog
+meta_description: Blog page description
+body_class: blog
+title: The Blog
+---
+
+<main id="main" class="">
+
+    <section id="container-centre" class="flex-1 container ml-auto mr-auto">
+
+        <h1 class="">{{ title }}</h1>
+
+        <div class="">
+            {% for post in collections.blog %}
+                <article class="">
+
+                    {# featured post image & category #}
+                    {% if post.data.featured_image %}
+
+                    <figure class="">
+                        <p class="">{{ post.data.category }}</p>
+
+                        <img src="{{ post.data.featured_image }}" alt="{{ post.data.image_caption }}" class="">
+
+                    </figure>
+
+                    {% endif %}
+
+                    <div class="">
+
+                        <h2 class=""><a class="" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+
+                        <div class="">
+
+                            <p class="author">By {{ site.author.name }}</p>
+
+                            <p class="hidden md:block px-2">—</p>
+
+                            <time datetime="{{ post.date }}">
+                                {{ post.date | dateDisplay }}
+                            </time>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+</main>
+
+

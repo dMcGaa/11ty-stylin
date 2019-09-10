@@ -1,0 +1,20 @@
+{
+    "name": "11ty-Stylin",
+    "url": "",
+    "author": {
+        "name": "dMcGaa",
+        "email": "",
+        "handle": "",
+        "avatar": ""
+    },
+    "images": {
+        "favicon": "/images/favicon.ico",
+        "twitter": "/images/meta/twitter.jpg",
+        "og": "/images/meta/og.jpg"
+    },
+    "social_links": {
+        "facebook": "https://www.facebook.com",
+        "twitter": "https://www.twitter.com",
+        "linkedin": "https://www.linkedin.com"
+    }
+}
